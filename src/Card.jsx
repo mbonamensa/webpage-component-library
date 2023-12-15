@@ -15,7 +15,7 @@ export default function Card({
 
     return (
 
-        <div className={`w-[${width}] h-[${height}] p-8 bg-[${bgColor}] rounded-md shadow relative`}>
+        <div className={`w-[${width}] h-[${height}] p-8 bg-[${bgColor}] rounded-md hover:shadow relative`}>
             <div className="text-center flex flex-col items-center gap-4 mt-4">
                 <div className={`w-12 h-12 bg-[${iconBgColor}] rounded-md absolute top-[-25px] inline-flex justify-center items-center shadow`}>
                     {icon ? icon : <HiOutlineCloudUpload className={`text-[${iconColor}] text-lg`} />}
