@@ -2,6 +2,7 @@ import { PiWarningFill } from "react-icons/pi"
 import { HiMiniXCircle } from "react-icons/hi2"
 import { HiInformationCircle } from "react-icons/hi"
 import { HiCheckCircle } from "react-icons/hi";
+import PropTypes from "prop-types"
 
 export default function Banner({children, style, subText}) {
 
@@ -52,4 +53,16 @@ export default function Banner({children, style, subText}) {
         </div>
         </>
     )
+}
+
+Banner.propTypes = {
+    children: PropTypes.string, 
+    style: PropTypes.string, 
+    subText: PropTypes.string, 
+}
+
+Banner.defaultProps = {
+    children: "Banner", 
+    style: "success", 
+    subText: null 
 }
