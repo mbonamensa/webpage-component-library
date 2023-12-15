@@ -70,8 +70,8 @@ Badge.propTypes = {
     shape: PropTypes.string, 
     textColor: PropTypes.string, 
     bgColor: PropTypes.string,
-    width: PropTypes.number,
-    height: PropTypes.number
+    width: PropTypes.number || PropTypes.string,
+    height: PropTypes.number || PropTypes.string
 }
 
 Badge.defaultProps = {
